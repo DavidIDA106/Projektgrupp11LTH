@@ -5,9 +5,38 @@
     grid-auto-rows: minmax(100px, auto);
 }
 
+.sidebar {
+    height: 100%;
+    width: 85px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 60px;
+    white-space: nowrap;
+  }
+
 .belowHeader {
     background-color: cyan;
     grid-column: 1/7;
     grid-row: 2;
     opacity: 80%;
+}
+
+#main {
+
+}
+
+
+.material-icons,
+.icon-text {
+  vertical-align: middle;
+}
+
+.material-icons {
+  padding-bottom: 3px;
+  margin-right: 30px;
 }
