@@ -1,0 +1,139 @@
+
+/* ------------------------- Start: Content grid --------------------------- */
+
+
+/* This grid only contains page content, not sidebar, top-banner or
+   top links */
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 20% 80%;  /* 20% free for sidebar, rest for content */
+	grid-template-rows: repeat(4, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 20px 20px 20px;
+}	
+
+
+/* makes content start at column 2 */
+.wrapper > .con {
+	grid-column-start: 2;
+}
+
+
+/* only makes background-color of sidebar */
+.wrapper > .side {
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	background-color: #b3ffff;
+}
+
+/* ------------------------- End: Content Grid ----------------------------- */
+
+
+
+
+
+/* ------------------------- Start: Top Banner ----------------------------- */
+
+
+/* Only displays top banner */
+
+.start {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	background-color: #b3ffff;
+}
+
+.start > div {
+	grid-column-start:2;
+}
+
+/* ------------------------- End: Top Banner ------------------------------- */
+
+
+
+ 
+
+
+/* ------------------------- Start: Top Menu ------------------------------- */
+
+
+/* Top menu with links */
+
+.topmenu {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	background-color: #b3ffff;
+}
+
+.topmenu > div {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-start: 2; /* Makes place for sidebar */
+}
+
+/* ------------------------- End: Top Menu --------------------------------- */
+
+
+
+
+
+/* ------------------------- Start: Sidebar -------------------------------- */
+
+
+.sidebar {
+	position: fixed; 
+	display: grid;
+	grid-template-rows: 2fr repeat(8, 1fr);
+   height: 100%;
+   width: 19.8%;
+   background-color: #b3ffff;
+}
+
+/* ------------------------- End: Sidebar ---------------------------------- */
+
+
+
+
+
+/* ------------------------- Start: General Style -------------------------- */
+
+	
+h1 {
+	text-align: center;
+	font-family: arial;
+	color: #004d4d;
+	font-size: 48px;
+}
+
+
+h2 {
+    text-align: center;
+	font-family: arial;
+}
+
+
+p {
+	font-family: arial;
+	font-size: 16px;
+}	
+
+a {
+	font-family: arial;
+	font-size: 32px;
+	width: 100%;
+	text-decoration: none;
+   font-weight: bold;
+   color: #004d4d;
+   text-align: center;
+   
+}
+
+
+a:hover {
+   background-color:#66d9ff;
+}
+
+/* ------------------------- End: General style ---------------------------- */
+
