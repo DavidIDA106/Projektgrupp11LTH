@@ -1,3 +1,5 @@
+
+/* Alla objekt på hemsidan skall ingå i gridsystemet nedan */
 .wrapper {
     display: grid;
     gap: 10px;
@@ -5,9 +7,71 @@
     grid-auto-rows: minmax(100px, auto);
 }
 
+.header{
+    grid-column: 2;
+    grid-row: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 85px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 60px;
+    white-space: nowrap;
+  }
+
 .belowHeader {
     background-color: cyan;
     grid-column: 1/7;
     grid-row: 2;
     opacity: 80%;
 }
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    font-size: 30px;
+  }
+
+.sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+#main {
+    grid-column: 1/7;
+    grid-row: 3;
+    height:auto;
+    padding: 16px;
+    margin-left: 85px;
+    transition: margin-left 0.5s;
+}
+
+main .sidebar {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+.material-icons,
+.icon-text {
+  vertical-align: middle;
+}
+
+.material-icons {
+  padding-bottom: 3px;
+  margin-right: 30px;
+}
+
+

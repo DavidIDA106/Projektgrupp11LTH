@@ -10,6 +10,8 @@
     <title>What should we call this?</title>
 </head>
 <body>
+
+<!-- Skapar en wrapper för att kunna göra ett CSS grid-system och lättare placera ut objekt på hemsidan. -->
     <div class="wrapper">
         <div class="header" style="text-align: center;">
            
@@ -20,10 +22,25 @@
         <div class="belowHeader" style="text-align: center;">
             <h2>Links here</h2>
         </div>
+<!-- Kör en js funktion för att dra ut och dra in sidebaren som ligger i index.js -->
+        <div id="mySidebar" class="sidebar"
+            onmouseover="toggleSidebar()"
+            onmouseout="toggleSidebar()">
+            <a href="index.html"><span><i class="material-icons">info</i><span class="icon-text">Hemsida</span></a> <br> <br>
+            <a href="energi.html"><span><i class="material-icons">battery_charging_full</i><span clas="icon-text">Energi</span></a> <br> <br>
+            <a href="mat.html"><span><i class="material-icons">restaurant_menu</i><span clas="icon-text">MatProd.</span></a> <br> <br>
+            <a href="transport.html"><span><i class="material-icons">flight_takeoff</i><span clas="icon-text">Transport</span></a> <br> <br>
+            <a href="eko.html"><span><i class="material-icons">park</i><span clas="icon-text">EkoSystem</span></a> <br> <br>
+
+
+        </div>
+        <div id="main">
+            <p>This is the content page</p>
+        </div>
         
 
     </div>
-
+    <script src="../js/index.js"></script>
     
 </body>
 </html>
