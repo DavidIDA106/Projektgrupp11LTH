@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/quiz.css">
     <link rel="stylesheet" href="../css/style.css">
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What should we call this?</title>
+    <title>Quiz</title>
 </head>
 <body>
-
-<!-- Skapar en wrapper för att kunna göra ett CSS grid-system och lättare placera ut objekt på hemsidan. -->
+    <!-- Skapar en wrapper för att kunna göra ett CSS grid-system och lättare placera ut objekt på hemsidan. -->
     <div class="wrapper">
         <div class="header" style="text-align: center;">
-           
-            <h1>Title here
-            <span class="material-icons">face</span>
-        </h1>
+           <h1>Quiz</h1>
+           <div id="score" style="margin-left:auto">
+
+           </div>
+           <div id="corGuess">
+
+           </div>
+           <div id="failGuess">
+
+           </div>
         </div>
-        <div class="belowHeader" style="text-align: center;">
-            <h2>Links here</h2>
-        </div>
-<!-- Kör en js funktion för att dra ut och dra in sidebaren som ligger i index.js -->
+
+        <main>
+            <section class="quizContainer">
+                <section class="quizController" onChange="changeSubject">
+                    <select id="groupSelector" onChange="changeSubject">
+                        <option value="*">All subjects</option>
+                    </select>
+                </section>
+            </section>
+
+            <section id="question">
+                <section id="answers">
+
+                </section>
+            </section>
+        </main>
+   
         <div id="mySidebar" class="sidebar"
             onmouseover="toggleSidebar()"
             onmouseout="toggleSidebar()">
@@ -32,16 +52,12 @@
             <a href="transport.html"><span><i class="material-icons">flight_takeoff</i><span clas="icon-text">Transport</span></a> <br> <br>
             <a href="eko.html"><span><i class="material-icons">park</i><span clas="icon-text">EkoSystem</span></a> <br> <br>
             <a href="quiz.html"><span><i class="material-icons">quiz</i><span clas="icon-text">Quiz</span></a> <br> <br>
-
-
         </div>
-        <div id="main">
-            <p>This is the content page</p>
-        </div>
+<!-- Kör en js funktion för att dra ut och dra in sidebaren som ligger i index.js -->
         
 
     </div>
-    <script src="../js/index.js"></script>
+    <script src="../js/quiz.js"></script>
     
 </body>
 </html>
