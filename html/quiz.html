@@ -15,11 +15,12 @@
     <!-- Skapar en wrapper för att kunna göra ett CSS grid-system och lättare placera ut objekt på hemsidan. -->
     <div class="wrapper">
         <div class="header" style="text-align: center;">
-           <h1>Quiz</h1>
            <div id="score" style="margin-left:auto">
 
            </div>
-           <div id="corGuess">
+           <div id="corGuess"
+           onmouseover=""
+           >
 
            </div>
            <div id="failGuess">
@@ -27,22 +28,33 @@
            </div>
         </div>
 
-        <main>
-            <section class="quizContainer">
-                <section class="quizController" onChange="changeSubject">
-                    <select id="groupSelector" onChange="changeSubject">
-                        <option value="*">All subjects</option>
-                    </select>
-                </section>
-            </section>
-
-            <section id="question">
-                <section id="answers">
-
-                </section>
-            </section>
-        </main>
-   
+    
+        <section class="quizContainer">
+           <div class="quiz-container" id="quiz">
+               <div class="quiz-header">
+                   <h2 id="question">Question Text</h2>
+                   <ul>
+                       <li>
+                           <input type="radio" name="answer" id="a" class="answer">
+                           <label for="a" id="a_text">Answer A</label>
+                       </li>
+                       <li>
+                           <input type="radio" name="answer" id="b" class="answer">
+                           <label for="b" id="b_text">Answer B</label>
+                       </li>
+                       <li>
+                           <input type="radio" name="answer" id="c" class="answer">
+                           <label for="c" id="c_text">Answer c</label>
+                       </li>
+                       <li>
+                           <input type="radio" name="answer" id="d" class="answer">
+                           <label for="d" id="d_text">Answer D</label>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           <button type="submit" id="submit">Submit</button>
+        </section>
         <div id="mySidebar" class="sidebar"
             onmouseover="toggleSidebar()"
             onmouseout="toggleSidebar()">
