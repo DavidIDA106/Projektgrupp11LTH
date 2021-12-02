@@ -1,12 +1,287 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>What should we call this?</title>
 </head>
 <body>
+
+<!-- Skapar en wrapper för att kunna göra ett CSS grid-system och lättare placera ut objekt på hemsidan. -->
+    <div class="wrapper">
+        <div class="header" style="text-align: center;">
+           
+            <h1>Title here
+            <span class="material-icons">face</span>
+        </h1>
+        </div>
+        <div class="belowHeader" style="text-align: center;">
+            <h2>Links here</h2>
+        </div>
+<!-- Kör en js funktion för att dra ut och dra in sidebaren som ligger i index.js -->
+        <div id="mySidebar" class="sidebar"
+            onmouseover="toggleSidebar()"
+            onmouseout="toggleSidebar()">
+            <a href="index.html"><span><i class="material-icons">info</i><span class="icon-text">Hemsida</span></a> <br> <br>
+            <a href="energi.html"><span><i class="material-icons">battery_charging_full</i><span clas="icon-text">Energi</span></a> <br> <br>
+            <a href="mat.html"><span><i class="material-icons">restaurant_menu</i><span clas="icon-text">MatProd.</span></a> <br> <br>
+            <a href="transport.html"><span><i class="material-icons">flight_takeoff</i><span clas="icon-text">Transport</span></a> <br> <br>
+            <a href="eko.html"><span><i class="material-icons">park</i><span clas="icon-text">EkoSystem</span></a> <br> <br>
+
+
+        </div>
+        <div id="main">
+
+            <h2>Den mänskliga påverkan på Ekosystem och den biologiska mångfalden</h2>
+
+            <h3>Problemformulering</h3>
+
+            <p>Biologisk mångfald är en viktig punkt bland annat för de globala målen för hållbar utveckling och är både direkt och indirekt kopplat till de två målen ”Hav och marina resurser” och ”Ekosystem och biologisk mångfald”. Det mänskliga avtrycket på våra ekosystem lyser igenom på många sätt, men i denna kurs kommer fokuset ligga på den så kallade avskogningen som sker världen runt.</p>
+
+            <figure>
+            <img height="356px" width="800px" src="../pictures/treepic.jpg">
+            <figcaption style="font-size: 12px;">
+                Bild 1: En bild av ett område utsatt av avskogning. 
+                Hämtad från : https://www.publicdomainpictures.net/se/view-image.php?image=296125&picture=avskogning
+            </figcaption>
+            </figure>
+            </br>
+
+            <p>Avskogning kan enkelt beskrivas som avskaffandet av skog i stora områden. Detta sker inte alltid på grund av mänsklig inverkan, utan kan även vara resultatet av till exempel större bränder. Men ofta är det vi människor som orsakar avskogningen för att göra plats för exempelvis odling, betesdrift, bebyggelse eller bara för att införskaffa råvaror så som ved eller papper.<sup>1</sup></p>
+
+            <p>Så varför är avskogning ett problem?</p>
+
+            <p>Avskogningen är direkt farlig för människans existens. Genom att hugga ned träden och avskaffa växtlivet i så stora områden begränsar vi mängden koldioxid som kan tas upp av naturen genom fotosyntes, vilket i sin tur innebär att luften vi människor andas kommer innehålla mindre syre.</p>
+
+
+            <figure>
+            <img height="540px" width="800px" src="../pictures/graph1.png">
+            <figcaption style="font-size: 12px;">
+                Graf 1: En graf över skogsförlust i olika områden under perioden 2002-2019.
+                Data från: https://rainforests.mongabay.com/
+            </figcaption>
+            </figure>
+            </br>
+
+            <p>Enligt ”Food and Agriculture Organization(FAO)” står agrikulturen för ungefär 80% av avskogningen. Kommersiell och industriell agrikultur står för cirka 40% av skogsförlust genom deras ständiga sökande efter utrymme att odla mat eller biobränslen som till exempel palmolja. Resterande avskogning sker på grund av urbanisering och gruvdrift.<sup>2</sup></p>
+
+            <p>Ca 80% av jordens vilda djur och växter lever i skogar. Genom avskogningen driver vi många av dessa djur till gränsen av utrotning. Exempel på raser som numera är utrotningshotade på grund av avskogningen är orangutanger, Sumatra tigrar och en stor mängd fågelarter. Genom att hugga ner deras skogar berövar vi djuren på deras hem som under dagen blockerar solstrålarna och under natten bevarar värmen. Denna extrema störning i naturen leder även till enorma temperaturförändringar som är farlig för växtlivet.<sup>3</sup></p>
+
+            <p>På följande sidor kommer du få lära dig vad vi människor kan göra för att förbättra situationen både för djur- och växtriket, men om du ännu inte är övertygad på hur djurrikets mångfald påverkar dig? Kika då på denna video om hur olika arters liv påverkar varandra. (hämtad från https://youmatter.world/en/definition/definitions-what-is-definition-deforestation-causes-effects/)</p>
+            <p>Länk:</p>
+            <a href="https://www.youtube.com/watch?v=ysa5OBhXz-Q&ab_channel=SustainableHuman">
+                https://www.youtube.com/watch?v=ysa5OBhXz-Q&ab_channel=SustainableHuman
+            </a>
+            </br>
+
+            </br>
+            </br>
+            </br>
+
+            <h3>One Tree Planted</h3>
+
+            <p>Den mest självklara lösningen på problemet för lite skog, är så klart att plantera mer. Men hur ska man effektivisera detta och nå ut till platser runt om i världen? </p>
+
+            <p>One tree planted, grundat 2014 av Matt Hill från Vermont, är en ideell organisation som för varje dollar som doneras till dom, planterar ett träd. Deras vision är att göra det så enkelt som möjligt för människor runt om i världen att bidra till att göra klimatet bättre.  Sen organisationens grundande, har över 40 miljoner träd planterats i över 43 olika länder.</p>
+
+            <p>Organisationen driver ett flertal projekt i syfte att bidra till den biologiska mångfalden. Ett av dessa projekt ämnar försöka återställa ”The Knuckles mountain range” i Sri Lanka som på grund av kommersiellt jordbruk blivit offer till landets avskogning.<sup>4</sup></p>
+
+
+            <figure>
+            <img height="360px" width="446px" src="../pictures/mountains1.jpg">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Bild 2: The Knuckles Mountain range
+                Hämtad från shutterstock
+            </figcaption>
+            </figure>
+            </br>
+
+            <p>Denna plats, som utgör ungefär 0.03% av öns yta, är hem till mer än 34% av Sri Lankas inhemska träd, buskar och andra växter. Området är även hem till olika däggdjur så som vildsvin, axishjort, jätteekorre, den purpurfärgade languren och ett stort antal arter ödlor.<sup>5</sup></p>
+
+
+            <figure>
+            <img height="360px" width="502px" src="../pictures/squirrel1.png">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Bild 3: en bild av jätteekorren Ratufa macroura
+                Hämtad från shutterstock
+            </figcaption>
+            </figure>
+            </br>
+
+            <p>Ytterligare ett projekt som organisationen står för tar sin plats i Kenya, som på 1960-talet bestod av 10% skog och var hem till en stor mängd djur- och växtarter som till exempel den afrikanska leoparden eller den fläckiga hyenan.</p>
+
+            <p>Idag har ytan som täcks av skog i Kenya reducerats till ynka 6 % på grund av ett flertal anledningar som den ökade kolproduktionen, kultivering av marijuana, stenbrott, boskap eller annan kommersiell agrikultur. Organisationen har därför skapat detta projekt för att försöka rädda de hotade hyenor och leoparder som numera är hemlösa på grund av avskogningen.<sup>6</sup></p>
+
+            <figure>
+            <img height="360px" width="501px" src="../pictures/dingo1.jpg">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Bild 4 : En bild på den fläckiga hyenan 
+                Hämtad från shutterstock
+            </figcaption>
+            </figure>
+
+
+            </br>
+            </br>
+            </br>
+
+            <h3>Att förhålla sig till en hållbar livsstil</h3>
+
+            <p>Som nämnts för föregående sidor, står den industriella och kommersiella agrikulturen för en majoritet av avskogningen som sker runt om i världen. Det är därför viktigt att man som individ försöker upprätthålla en hållbar livsstil.  </p>
+
+            <p>Detta innebär exempelvis att försöka äta mindre kött. Även om en viss del av avskogning ibland är nödvändig för att kunna odla plantor och växter till den vegetariska kosten, är det fortfarande mycket bättre än alternativet där avskogning först måste ske för att göra plats till betesmarker för djuren och sedan även för odlingen av mat till djuren. En vegetariskt baserad kost innebär 2.5 gånger mindre koldioxidutsläpp än en köttbaserad kost.<sup>7</sup> Att fullkomligt sluta äta kött kan verka orimligt för de flesta, men att äta vegetariskt några dagar i veckan är ingen jätteförändring, speciellt om man tar dagens utbud av vegetariska alternativ i åtanke, och det gör skillnad.  Att producera ett kycklingbröst kräver runt 735 liter av vatten vilket motsvarar ungefär 4.6 gånger mängden vatten det krävs för att fylla ett hyffsat badkar!<sup>8</sup></p>
+
+
+            <figure>
+            <img height="360px" width="501px" src="../pictures/hons1.jpg">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Bild 5: En bild på höns
+                Hämtad från shutterstock
+            </figcaption>
+            </figure>
+            </br>
+
+            <p>En annan vardaglig förändring vi som individer kan göra är att välja de så kallade svanmärkta produkterna när vi är på affären. En svanmärktprodukt har blivit godkänd av ett utomstående företag som en miljövänlig produkt. För att få ett svanmärke krävs att produkten uppfyller en stor mängd tuffa krav ställda av företaget, och testade på ett oberoende labb. Vad dessa krav är exakt beror lite på produkten, men man tar hänsyn till bland annat klimatpåverkan, biologisk mångfald, kemikalier, avfallshantering och mycket mer!</p>
+
+            <p>Dessutom är det ett krav att de märkta produkterna måste fungera lika bra som de omärkta. Exempelvis måste tvättmedel kunna tvätta rent vid låga temperaturer och tonerkassetter måste hålla en hög kvalité.<sup>9</sup></p>
+
+            <p>Numera byggs till och med svanmärkta hus! Från 2018 till 2021 har antalet svanmärkta hus, skolor och förskolor tredubblats. Men vad innebär då ett svanmärkt hus? Jo det innebär en låg energiförbrukning, en hälsosam inomhusmiljö, skarpa kemikaliekrav och skarpa krav på hållbarhet som tex att trät som används är certifierat. Dessa krav fastställs av en oberoende tredje part och kontrolleras på plats.</p>
+
+
+            <figure>
+            <img height="360px" width="501px" src="../pictures/bygg1.jpg">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Bild 6: Ett hus under konstruktion
+                Hämtad från shutterstock
+            </figcaption>
+            </figure>
+
+
+            </br>
+            </br>
+            </br>
+
+            <h3>Palmolja och avskogning</h3>
+            <p>Vi ska nu ta en närmare titt på just palmolja, eftersom det är ett välkänt faktum att utvinning av palmolja är en stor drivande faktor till avskogning runt om i världen.</p>
+
+
+            <figure>
+            <img height="360px" width="624px" src="../pictures/forest1.jpg">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Bild 7: Påbörjad avskogning sedd ovanifrån
+                Hämtad från shutterstock
+            </figcaption>
+            </figure>
+            </br>
+
+            <p>
+            Så vad är palmolja? Palmolja är en ätbar vegetabilisk olja som utvinns från oljepalmens frukt. Oljepalmen är ett träd som växer i Afrika från början, men har för ungefär 100 år sedan även blivit fört till Sydostasien som inredningsplanta. Vad gäller produceringen av Palmolja, står Indonesien och Malaysia för mer än 85 % av det globala utbudet.<sup>10</sup></p>
+
+
+            <p>Så i vilka produkter finns palmolja? Nästan alla. Palmolja används i allt från pizza, munkar och choklad till deodorant, schampo eller läppstift. Det används även som biobränsle i många delar av världen. Då är en rimlig följdfråga, varför används palmolja överallt om det nu är så farligt för miljön? </p>
+
+            <p>Palmoljan är en extremt potent olja med många olika egenskaper och funktioner vilket gör att den är användbar inom så många områden. Den är halvfast vid rumstemperatur så den kan hålla leverpastejen du har på frukostmackan bredbar. Den är stabil vid högre temperaturer vilket kan användas för att göra stekta produkter krispigare. Den är även lukt och färglös, så att använda den i livsmedel över lag har nästan bara fördelar. I asiatiska och afrikanska länder används palmolja ungefär som vi använder rapsolja här i Sverige.</p>    
+
+            <p>Alla dessa värdefulla egenskaper gör palmolja mycket användbar och detta i kombination med hur effektivt palmolja kan utvinnas gör den överlägsen mycket annat ( om man bortser från avtrycket på klimatet så klart). Grafen nedan visar just hur överlägsen palmolja är när man jämför hur mycket olja som kan utvinnas från råvaran.</p>
+
+
+            <figure>
+            <img height="600px" width="900px" src="../pictures/graph2.png">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Graf 2: En graf över hur mycket olja som kan produceras av olika råvaror.
+                Data från https://wwwwwfse.cdn.triggerfish.cloud/uploads/2019/01/producerad-olja-ton-per-hektar-1920x1200.jpg
+            </figcaption>
+            </figure>
+            </br>
+
+            <p>Men åter till problemet med Palmolja. Palmolja har varit och fortsätter att vara en stor drivande faktor för avskogning i några av skogarna med mest biologisk mångfald i världen. Detta har inneburit försämring av livsmiljön för många redan hotade arter så som Orangutang, pygméelefant och Sumatra noshörning. Det har även inneburit, som vi diskuterat på tidigare sidor, att miljontals ton växthusgaser släppts ut i atmosfären.<sup>11</sup></p>
+
+            <p>Så vad kan vi göra för att förbättra situationen? </p>
+
+            <p>”The Roundtable on Sustainable Palm Oil” eller RSPO bildades 2004 på grund av ökande oro för palmoljans konsekvenser. RSPO ställer krav på produktionen av palmolja och kan på så vis garantera att palmoljan är framställd på bästa sätt för båda samhället och miljön. Om vi tvunget måste köpa något innehållande palmolja, kan vi genom att köpa RSPO märkta produkter kan vi garantera att vi minimerat påverkan på klimatet.<sup>12</sup></p>
+
+            <p>Ett annat sätt för oss som individer att bidra är genom att laga mer mat hemma. Genom att använda oss av råvaror och närodlade produkter kan vi garantera att produkterna vi konsumerar och intar inte innehåller någon palmolja.</p>
+
+
+
+            </br>    
+            </br>
+            <a  style="font-size: 12px;" href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/avskogning"><sup>1</sup>
+                https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/avskogning
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="https://youmatter.world/en/definition/definitions-what-is-definition-deforestation-causes-effects/"><sup>2</sup>
+                https://youmatter.world/en/definition/definitions-what-is-definition-deforestation-causes-effects/
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="https://www.nationalgeographic.com/environment/article/deforestation"><sup>3</sup>
+                https://www.nationalgeographic.com/environment/article/deforestation
+            </a>
+
+
+            </br>
+            <a style="font-size: 12px;" href="https://onetreeplanted.org/collections/africa/products/biodiversity"><sup>4</sup>
+                https://onetreeplanted.org/collections/africa/products/biodiversity
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="https://onetreeplanted.org/collections/africa/products/biodiversity"><sup>5</sup>
+                https://onetreeplanted.org/collections/africa/products/biodiversity
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="https://onetreeplanted.org/collections/africa/products/biodiversity"><sup>6</sup>
+                https://onetreeplanted.org/collections/africa/products/biodiversity
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="https://doi.org/10.1007/s10584-014-1169-1"><sup>7</sup>
+                Scarborough, P., Appleby, P.N., Mizdrak, A. et al. Climatic Change (2014) 125: 179.</br>
+                https://doi.org/10.1007/s10584-014-1169-1
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="https://vegsoc.org/info-hub/why-go-veggie/environment/"><sup>8</sup>
+                https://vegsoc.org/info-hub/why-go-veggie/environment/
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="https://www.matspar.se/blogg/om-svanen-och-svanenmarkta-produkter"><sup>9</sup>
+                https://www.matspar.se/blogg/om-svanen-och-svanenmarkta-produkter
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="https://www.wwf.org.uk/updates/8-things-know-about-palm-oil"><sup>10</sup>
+                https://www.wwf.org.uk/updates/8-things-know-about-palm-oil
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="https://www.wwf.org.uk/updates/8-things-know-about-palm-oil"><sup>11</sup>
+                https://www.wwf.org.uk/updates/8-things-know-about-palm-oil
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="https://www.wwf.org.uk/updates/8-things-know-about-palm-oil"><sup>12</sup>
+                https://www.wwf.org.uk/updates/8-things-know-about-palm-oil
+            </a>
+
+
+
+
+
+        </div>
+        
+
+    </div>
+    <script src="../js/index.js"></script>
     
 </body>
 </html>

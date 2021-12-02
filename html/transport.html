@@ -1,12 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>What should we call this?</title>
 </head>
 <body>
+
+<!-- Skapar en wrapper för att kunna göra ett CSS grid-system och lättare placera ut objekt på hemsidan. -->
+    <div class="wrapper">
+        <div class="header" style="text-align: center;">
+           
+            <h1>Title here
+            <span class="material-icons">face</span>
+        </h1>
+        </div>
+        <div class="belowHeader" style="text-align: center;">
+            <h2>Links here</h2>
+        </div>
+<!-- Kör en js funktion för att dra ut och dra in sidebaren som ligger i index.js -->
+        <div id="mySidebar" class="sidebar"
+            onmouseover="toggleSidebar()"
+            onmouseout="toggleSidebar()">
+            <a href="index.html"><span><i class="material-icons">info</i><span class="icon-text">Hemsida</span></a> <br> <br>
+            <a href="energi.html"><span><i class="material-icons">battery_charging_full</i><span clas="icon-text">Energi</span></a> <br> <br>
+            <a href="mat.html"><span><i class="material-icons">restaurant_menu</i><span clas="icon-text">MatProd.</span></a> <br> <br>
+            <a href="transport.html"><span><i class="material-icons">flight_takeoff</i><span clas="icon-text">Transport</span></a> <br> <br>
+            <a href="eko.html"><span><i class="material-icons">park</i><span clas="icon-text">EkoSystem</span></a> <br> <br>
+
+
+        </div>
+        <div id="main">
+            
+            <h2>Transport</h2>
+
+            <h3>Problemuppställning</h3>
+
+            <p>Vi människor har ett behov av att förflytta oss. För länge sedan för att hitta mat, dräglig boplats eller liknande. För att komma från plats A till B har mänskligheten uppfunnit saker som gjort att vi tog oss sträckan A till B på kortare och kortare tid.</p>
+
+            <p>De sätten vi känner idag är inte relaterade till skidor, släde eller häst och vagn utan vi använder oss av bilar, båtar, flygplan men även cyklar, tåg och bussar. Allt för att ta oss dit vi vill så snabbt som möjligt.</p>
+
+            <p>Vad är då utmaningen och problemet med transport när det kommer till hållbar utveckling?</p>
+
+            <p>I huvudsak så är det hur transportsätten påverkar vårt klimat och vår miljö. Det är utsläppen från transporterna som är den stora boven. Utsläpp av växthusgaser påverkar vårt klimat negativt (läs mer på energi-sidan//hyperlänk dit//). Därför är både valet av transportmedel och hur mycket man transporterar sig avgörande för en hållbar utveckling.</p>
+
+            <p>Vår närmiljö påverkas också negativt i form av bland annat buller och så kallad “smog”.</p>
+
+
+            <figure>
+            <img height="360px" width="960px" src="../pictures/peking.png">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Bild från peking 2005. Till vänster efter regnet lagt sig. Till höger, en solig dag.
+                Bild tagen från wikipedia.
+            </figcaption>
+            </figure>
+            </br>
+
+            <p>Nedan är en enkel tabell där man kan få en bild av vad olika transportsätt avger för utsläpp. Räknat i gram koldioxid per kilometer och per passagerare. Du kan säkert få lite tankar om hur du kan påverka redan nu. På följande sidor lär du dig mer om vilka alternativ som finns idag och som kan komma att finnas i framtiden.</p>
+
+
+            <table>
+                <tr>
+                    <th>Transportsätt</th>
+                    <th>Antal passagerare</th>
+                    <th>Gram CO2/km per passagerare</th>
+                </tr>
+                <tr>
+                    <td>Tåg</td>
+                    <td>156</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                     <td>Liten bil (samåkning)</td>
+                     <td>4</td>
+                     <td>42</td>
+                </tr>
+                <tr>
+                     <td>Stor bil (Samåkning)</td>
+                     <td>4</td>
+                     <td>55</td>
+                </tr>
+                <tr>
+                     <td>Buss</td>
+                     <td>12,7</td>
+                     <td>68</td>
+                </tr>
+                <tr>
+                     <td>Motorcykel</td>
+                     <td>1,2</td>
+                     <td>72</td>
+                </tr>
+                <tr>
+                     <td>Liten bil</td>
+                     <td>1,5</td>
+                     <td>104</td>
+                </tr>
+                <tr>
+                     <td>Stor bil</td>
+                     <td>1,5</td>
+                     <td>158</td>
+                </tr>
+                <tr>
+                     <td>Flygplan</td>
+                     <td>88</td>
+                     <td>285</td>
+                </tr>
+            </table> 
+
+            </br>
+            </br>
+
+
+
+
+            <h3>Kollektivtrafik</h3>
+
+            <p>Som tidigare nämnts behöver vi människor i dagens samhälle olika sätt att transportera oss på, men många av transportalternativen är inte särskilt snälla mot miljön.  Det vanligaste sättet för oss människor att ta oss runt är med bil, men bilar kommer tyvärr aldrig (vad vi kan förutse i nuläget), bli helt klimatneutrala, utan bara mindre och mindre farliga för miljön.  Men vad är det med bilarna som gör dom så farliga för miljön?</p>
+
+            <p>Bilarna är farliga för miljön bland annat för att det utgör ett högt buller i som stör kringliggande natur, vi förstör naturen för att bygga vägar och parkeringshus etcetera för att göra det lättare att ta bilen runt, hälsofarliga partiklar från däck och vägbanor och omfattande resursförbrukning till tillverkning av bilarna. Men framför allt, är det allra värsta med dagens bilar de hälsofarliga utsläppen från förbränningsmotorerna. Vägtrafiken står för ungefär en tredjedel av Sveriges koldioxidutsläpp, och det är utan att räkna utsläppen från arbetsmaskiner.<sup>1</sup></p>
+
+
+            <figure>
+            <img height="385px" width="525px" src="../pictures/cars1.png">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Bild 1: Bild av bilar i trafik </br>
+                Hämtad från shutterstock
+            </figcaption>
+            </figure>
+            </br>
+
+            <p>Utsläppen innebär försurning av mark och vatten samt övergödning av sjöar och hav, ökat ozonlager som irriterar våra lungor och luftvägar och mycket annat otrevligt. Vi måste minska utsläppen i trafiken. Så vad är en uppenbar lösning på detta problem? Att minska antalet bilar i trafiken. Och hur gör vi det? Genom kollektivtrafik så klart!</p>
+
+
+            <figure>
+            <img height="394px" width="713px" src="../pictures/buss1.png">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Bild 2: Bild av en buss </br>
+                Hämtad från shutterstock
+            </figcaption>
+            </figure>
+            </br>
+
+            <p>Kollektivtrafik är definierat som passagerartrafik tillgänglig för allmänheten, det vill säga transportmedel så som bussar eller spårvagnar. Dessa är givetvis inte heller helt klimatneutrala, men att fler åker buss innebär att det förekommer färre bilar i trafiken. Detta innebär mindre köer, mindre farliga däck och vägpartiklar och så klart, mindre koldioxidutsläpp. Den genomsnittliga bilisten släpper ut ungefär 4 gånger så mycket koldioxid och andra växthusgaser än vad en person som åker buss gör.<sup>2</sup> Och eftersom många av bussarna drivs på biogas så blir dessa skillnader ännu större!</p>
+
+            <p>Att åka kollektivt är även säkrare för varje individ om vi kollar på skaderisken i trafiken. Skaderisken är åtta gånger högre för bilister och 144 gånger större för mc-förare än för bussresenärer.</p>
+
+            </br>
+
+
+
+
+
+            
+            </br>
+            <a style="font-size: 12px;" href="https://www.naturskyddsforeningen.se/artiklar/vanliga-fragor-om-bilar-klimat-och-miljo/"><sup>1</sup>
+                https://www.naturskyddsforeningen.se/artiklar/vanliga-fragor-om-bilar-klimat-och-miljo/
+            </a>
+
+            </br>
+            <a style="font-size: 12px;" href="http://www.fordubbling.se/kollektivtrafik-och-miljo.html"><sup>2</sup>
+                http://www.fordubbling.se/kollektivtrafik-och-miljo.html
+            </a>
+
+
+
+
+
+
+
+
+        </div>
+        
+
+    </div>
+    <script src="../js/index.js"></script>
     
 </body>
 </html>
