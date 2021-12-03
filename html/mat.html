@@ -1,12 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>What should we call this?</title>
 </head>
 <body>
+
+<!-- Skapar en wrapper för att kunna göra ett CSS grid-system och lättare placera ut objekt på hemsidan. -->
+    <div class="wrapper">
+        <div class="header" style="text-align: center;">
+           
+            <h1>Title here
+            <span class="material-icons">face</span>
+        </h1>
+        </div>
+        <div class="belowHeader" style="text-align: center;">
+            <h2>Links here</h2>
+        </div>
+<!-- Kör en js funktion för att dra ut och dra in sidebaren som ligger i index.js -->
+        <div id="mySidebar" class="sidebar"
+            onmouseover="toggleSidebar()"
+            onmouseout="toggleSidebar()">
+            <a href="index.html"><span><i class="material-icons">info</i><span class="icon-text">Hemsida</span></a> <br> <br>
+            <a href="energi.html"><span><i class="material-icons">battery_charging_full</i><span clas="icon-text">Energi</span></a> <br> <br>
+            <a href="mat.html"><span><i class="material-icons">restaurant_menu</i><span clas="icon-text">MatProd.</span></a> <br> <br>
+            <a href="transport.html"><span><i class="material-icons">flight_takeoff</i><span clas="icon-text">Transport</span></a> <br> <br>
+            <a href="eko.html"><span><i class="material-icons">park</i><span clas="icon-text">EkoSystem</span></a> <br> <br>
+
+
+        </div>
+        <div id="main">
+            
+            <h2>Matproduktion och konsumtion - valet för ett bättre framtid </h2>
+
+            <h3>Problembeskrivning</h3>
+
+            <p>Utsläppen från livsmedelssektorn står för cirka 20 -30 procent av de globala utsläppen . Detta orsakas av tillverknings aktivitet från lantbruket, förändrad markanvändning ( avskogning ) eller från energianvändningen för att producera insatsvaror som gödsel, utsläpp från tillverkningsprocess som förpackning, transportering.</p>
+
+            <p>Från statistiken från Sveriges lantbruksuniversitet så den svenska jordbruket släpper ut 7 miljoner ton av växthusgaser och det står för 13 procent av de totala utsläppen.</p>
+
+            <p>Metanutsläpp från nötkreaturen och fårens matsmältning står för 45 procent av jordbrukets utsläpp, lustgasutsläpp från marken står för cirka 45 procent, och lagring av stallgödsel står för 10 procent. Men om vi lägger till användning av energi, transport, produktion av insatsvaror, utsläpp från mulljordar så kan jordbrukets totala utsläpp räknas upp till 12 miljoner ton koldioxidekvivalenter. Varje person i Sverige står för cirka 1,5 ton 
+            koldioxidekvivalenter för mat per år.</p>
+
+            <p>Svenska befolkning importerar en omfattande mängd av mat från andra länder, framförallt när det gäller nötkött och ost. Detta leder till att en stor del av utsläppen från livsmedelssektorn sker utomlands. Åt andra sidan är det svårt att avgöra om svenska livsmedel har lägre klimatpåverkan än importerade livsmedel. Men det är säkert att transport för svensk livsmedel behövs mindre energi. </p>      
+
+            </br>
+            </br>
+
+
+            <h3>Sätt att minska utsläppen av växthusgaser i matproduktionen</h3>
+
+            <h3>Minska matsvinn</h3>
+
+            <p>Det är cirka 19 kilo mat som slängs i soporna och 26 kilo mat och dryck som hälls bort per person per år, enligt Livsmedelsverket. Det är maten som vi kan inte äta upp i tid, som vi har köpt för mycket, restmat som vi kastar bort istället för att äta upp senare. Enligt beräkning från Livsmedelsverket så ett hushåll kan spara minst 3000 - 6000 kr per år om man minskar sina matsvinn. Att minska matsvinn är inte bara bra för miljö men även för plånboken.</p>
+
+            <p><b>Några tips för minska matsvinn:</b></p>
+
+            <p> Planera dina inköp, köp inte för mycket </br>
+                Håll koll på maten i kylskåp och frys </br>
+                Förvara maten rätt: förvara färskt kött, fisk , mejerivaror i kylen så fort som möjligt, bra kylskåpstemperatur är 4 grader </br>
+                Undvika förvara mat i direkt solljus </br>
+                Slänger inte mat bara att den passerar bäst före-datum: det håller ofta längre. Man kan ta en kontroll på maten genom att titta, lukta, smaka först </br>
+                Tar hand om din rester, slänga inte bort i onödan. </br>
+                Det är viktigt att kolla igenom vad som finns hemma och vad som saknas </br>
+                Köp inte mer än vad du tror att du kan göra av med innan det blir dåligt. Du behöver ta hänsyn till grönsaker och frukt eftersom de förstörs snabbt </br>
+                Köp mat med kort datum. Det är bra för miljö men även för livsmedelsföretag. Om du tror att du ska äta upp maten i snart så kan du köpa maten som har kort till kvar till bäst-före datum </br>
+                När du lagar mat så tänker efter hur mycket du ska äta under måltiden </br>
+                Lägg inte för mycket mat på tallriken, tänk att du kan ta om </br>
+                Sätt in matrester i kylen så fort som möjligt så bakterier ska hinna att växa. Frys in resten om du inte kommer att äta upp de närmaste dagar. </p>
+            
+                </br>
+                </br>
+
+
+            <h3>Välja hållbara märkningar när man handlar</h3>
+
+            <p>Den 17 oktober är Miljömärkningarnas dag som uppmärksammar att valen i vardagen gör skillnad för både hälsa och miljö. Det finns många miljömärkningar i den svenska marknaden men det underlättar inte för konsumenterna när de väljer att äta hållbart. Nedanför är några exempel på miljömärkningar och vad de innebär:</p>
+
+            <p><b>Bra miljöval:</b></p>
+
+            <img height="200px" width="200px" src="../pictures/icon1.png">
+            </br>
+
+            <p>Bra Miljöval är Naturskyddsföreningens egen miljömärkning som ska underlätta för konsumenter att hitta de produkter och tjänster som är minst skadliga för miljö. </p>
+
+            <p>Märkningen bygger på två grundideer. Det handlar om att naturresurser måste sparas samt att den biologiska mångfalden och människors hälsa inte få hotas. Tillverkare får inte använda giftiga och svårnedbrytbara kemikalier. Föreningen strävar efter att minska totala  energianvändningen och påskynda övergång från fossila bränsle till förnybara energikällor. Krav på produkterna och tjänster som bär Bra Miljöval-märkning måste utvecklas kontinuerligt för bli skonsammare för miljön. </p>
+
+            <p><b>Krav:</b></p>
+            <img height="200px" width="200px" src="../pictures/icon2.png">
+            </br>
+
+            <p>Krav-märke är en de mest kända miljömärkning på mat i Sverige. Man kan hitta Krav-märke i nästa alla livsmedelsaffär i Sverige Märket innebär att boden använder naturliga ämne, gödsel från djuren i sina ordningar och inga kemikalier som är främmande för naturen. Maten är ekologisk alltså. </p>
+
+            <p>Alla produkter som bär KRAV- märke är kontrollerad regelbundet varje år så man är säkert på att produkterna är ekologiska. Det är viktigt att ta hänsyn till naturen, klimatet, djuren och människor som producerar mat. </p>
+
+            <p><b>Svanen:</b></p>
+            <img height="200px" width="200px" src="../pictures/icon3.png">
+            </br>
+
+            <p>Svanen grundades av Nordiska ministerrådet med syfte att hjälpa konsumenter att kunna välja produkter med låg påverkan på miljön. Märken handlar också om att konsumera mindre, tänka över vardagen och minska människans påverkan på jorden.</p>
+            <p>Svanen är typ 1 -märkning, vilket innebär att den är oberoende, drivs inte med vinstsyfte. Företaget som står bakom märke arbetar ständigt för att ta fram krav på nya områden så konsumenterna har flera miljömärkta produkter att välja mellan. Det är svårt att få Svanen-märke eftersom företaget tar hänsyn till miljöpåverkan på allt från råvaror och tillverkning, till användning och återvinning när produkten har gjort sitt. </p>
+
+            </br>
+            </br>
+
+
+            <h3>Produktion/ Tillverkning av mat</h3>
+
+            <p>För att matproduktionen ska bli mer hållbar då måste den vara mer resurseffektiv, det innebär att belastningen på miljö ska vara så låg som möjligt. Vi konsumenter har ansvar att äta mer klimat och miljövänligt, minska matsvinn, men det kräver även förändring i livsmedelsindustri och  jordbruket. </p>
+
+            <p>Hållbarhet inom matproduktion består av tre dimensioner som är miljömässiga, ekonomiska och sociala hållbarhet.</p>
+
+            <p> • Miljömässig hållbarhet handlar om att använda av naturresurser sparsamt </br>
+                • Ekonomisk hållbarhet handlar om att företaget ska ha möjlighet att bygga sin konkurrenskraft och därmed bidra till ekonomisk tillväxt </br>
+                • Social hållbarhet handlar om ett samhället där grundläggande mänskliga rättigheter är uppfylld </p>
+ 
+
+            <p>Det är livsviktigt för människor med matproduktion men den sliter också på vår planet. För att skapa en hållbar matproduktion måste man tänka på många olika områden. Det kan vara energianvändning, vatten, utsläpp....</p>
+
+            <p>Animalieproduktion omfattar de djur som behövs till producering av kött, ägg och mejeriprodukter. Det är viktigt att inse att för att produktionen ska vara hållbar  så måste djuren må bra och vara friska. Sjukdomar hos djur kan försämra produktion och öka lidande för djuren. En allvarlig smitta kan göra att djur eller hela besättningar ska avlivas. Så är det viktigt att ha bra skötselrutiner, rätt utfodring och förebyggande arbete.</p>
+
+            <p>Utsläpp av växthusgaser skiljer sig mycket mellan olika sorters djur. I produktionen av nötkött, får, lammkött, och mjölk så är det metan som skapats vid djurens matsmältning som bidrar till växthusgasutsläppen. Utsläppen av metan är mycket lägre från gris, kyckling är klimatpåverkan lägre när man konsumerar dessa typer av kött och ägg.</p>
+
+            <p>Det behöver mycket mer vatten för att producera kött än för att odla växter. Några exempel:
+               Att producera kött kräver fem gånger mer vatten jämfört med bönor och liner
+               Att producera komjölk kräver tre gånger mer vatten jämfört med växtbaserade drycker.
+               För att minska våra klimatavtryck så är det viktigt att tänka på att man bör konsumera mer produkter från växtrike.</p>
+
+            <p>Sjömat som fisk, alger,... vattenlevande organismer i hav och sjöar är ett hållbart alternativ till animaliskt protein. Den största källan till växthusgasutsläpp från fiske är dieselanvändning i fiskefartyg och kylmedel som finns på dessa fartyg.</p>
+
+
+
+        </div>
+        
+
+    </div>
+    <script src="../js/index.js"></script>
     
 </body>
 </html>
