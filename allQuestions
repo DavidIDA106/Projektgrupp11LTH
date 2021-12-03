@@ -1,0 +1,15 @@
+
+
+
+
+    question: "Vem är bäst i världen?",
+    a: "Erik",
+    b: "David Petersson",
+    c: "Yomama",
+    correct: "b",
+
+    question: "Hur många fåglar finns det i världen?",
+    a: "Minst två iallafall",
+    b: "Typ 3",
+    c: "Spelar det ens någon roll?",
+    correct: "b"
