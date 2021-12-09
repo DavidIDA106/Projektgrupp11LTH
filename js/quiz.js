@@ -1,21 +1,55 @@
 const testQuestions = [
     {
-        question: "Vem är bäst i världen?",
-        a: "Dave the slave",
-        b: "David Petersson",
-        c: "David Fetersson",
-        d: "Who's that guuuuy",
+        question: "På vilket sätt innebär mer skog bättre luft?",
+        a: "Växterna absorberar CO2 och spottar ut O2",
+        b: "Träden absorberar O2 och spottar ut CO2.",
+        c: "Träden absorberar både O2 och CO2.",
         correct: "a",
     },
     {
     
-        question: "Hur mycket av den här designen är baxad?",
-        a: "Eeh det behöver vi inte tänka på",
-        b: "Inte så viktigt",
-        c: "Vet du hur många löss det finns i världen?",
-        d: "blablabla",
+        question: "Hur många procent av avskogningen beror på agrikulturen?",
+        a: "Ca 80%",
+        b: "Ca 75%",
+        c: "70%",
+        correct: "a",
+    },
+    {
+        question: "Vad beror i huvudsak avskogningen i Sri Lanka på?",
+        a: "Skogsbränder",
+        b: "Gruvarbete",
+        c: "Kommersiellt jordbruk",
+        correct: "c",
+    },
+    {
+        question: "Med hur många procentenheter har Kenyas skog reducerats?",
+        a: "8",
+        b: "4",
+        c: "12",
         correct: "b",
-    }
+    },
+    {
+        question: "Hur mycket mindre co2 utsläpp innebär en vegetariskt baserad kost jämfört med en köttbaserad kost?",
+        a: "2.5X",
+        b: "2.0X",
+        c: "1.5X",
+        correct: "a",
+    },
+    {
+        question: "Hur mycket vatten krävs för att producera ett enda kycklingbröst?",
+        a: "Köp mer halvfabrikat",
+        b: "Laga mer mat hemma med när producerade råvaror",
+        c: "Ät mindre leverpastej ",
+        correct: "b",
+
+    },
+    {
+        question: "Vart i världen produceras mest palmolja?",
+        a: "Ryssland",
+        b: "Colombia",
+        c: "Malaysia och Indonesien",
+        correct: "c",
+    },
 ]
 
 function qS(selector) {
@@ -38,7 +72,6 @@ let answerElems = qSA('.answer');
 let aText = eId('a_text');
 let bText = eId('b_text');
 let cText = eId('c_text');
-let dText = eId('d_text');
 
 let scoreCount = 0;
 let questionCounter = 0;
@@ -49,12 +82,11 @@ function startQuiz(){
 
     deselectAnswers();
 
-    let currentData = testQuestions[questionCounter];
+    const currentData = testQuestions[questionCounter];
     questionElem.innerText = currentData.question;
     aText.innerText = currentData.a;
     bText.innerText = currentData.b;
     cText.innerText = currentData.c;
-    dText.innerText = currentData.d;
 }
 
 function deselectAnswers(){
@@ -66,7 +98,7 @@ function selected(){
 
     answerElems.forEach(element => {
         if(element.checked) {
-            answer = element;
+            answer = element.id;
         }
     })
     return answer;
@@ -75,7 +107,7 @@ function selected(){
 submit.addEventListener('click', () => {
     const answer = selected();
 
-    if(answer == question.correct){
+    if(answer === testQuestions[questionCounter].correct){
         scoreCount++;
     }
 
