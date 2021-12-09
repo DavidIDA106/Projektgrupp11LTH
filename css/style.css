@@ -15,7 +15,8 @@ body{
 
 
 .header{
-    grid-column: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
     grid-row: 0;
 }
 
@@ -107,6 +108,9 @@ p {
     font-family: sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
 
 h1, h2, h3, h4 {
     font-family: sans-serif;
