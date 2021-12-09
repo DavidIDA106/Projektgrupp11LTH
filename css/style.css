@@ -7,7 +7,7 @@
     grid-auto-rows: minmax(100px, auto);
     
 }
-
+/* Bestämmer bodyns egenskaper, färg */
 body{
   background-color: #b8c6db;
 }
@@ -16,7 +16,7 @@ body{
     grid-column: 2;
     grid-row: 0;
 }
-
+/* Sidebarens egenskaper, notera z-index som tar sidebaren i en tredje dimension vid behov */
 .sidebar {
     height: 100%;
     width: 85px;
@@ -31,12 +31,15 @@ body{
     white-space: nowrap;
   }
 
+  /* Submenyns egenskaper (horisontella menyn i toppen av sidan  */
 .belowHeader {
     background-color: cyan;
     grid-column: 1/7;
     grid-row: 2;
     opacity: 80%;
 }
+
+/* Länkarnas egenskaper i sidebaren */
 
 .sidebar a {
     padding: 8px 8px 8px 32px;
@@ -47,10 +50,13 @@ body{
     font-size: 30px;
   }
 
+  /* Vid hovring över länkarna i sidebaren */
+
 .sidebar a:hover {
     color: #f1f1f1;
   }
-  
+ 
+
 #main {
     grid-column: 1/7;
     grid-row: 3;
@@ -79,6 +85,7 @@ main .sidebar {
   margin-right: 30px;
 }
 
+
 p {
     font-family: sans-serif;
 }
@@ -95,6 +102,7 @@ h3 {
     font-family: sans-serif;
 }
 
+/* Tabell på content-sidan och dess egenskaper i css */
 table, th, td {
   border: 1px solid black;
   font-family: sans-serif;
