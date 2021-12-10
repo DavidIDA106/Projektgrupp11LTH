@@ -113,6 +113,48 @@ const testQuestions = [
         c: "79%",
         correct: "a",
     },
+    {
+        question: "Hur ser trenden för energikonsumtionen globalt ut?",
+        a: "Den blir mindre år för år",
+        b: "Den ökar år för år",
+        c: " Den ligger på samma nivå år för år",
+        correct: "b",
+    },
+    {
+        question: "Växthusgaserna i jordens atmosfär hjälper till att:",
+        a: "Värma upp jorden",
+        b: "Kyla ner jorden",
+        c: "Hålla kvar värme på jorden",
+        correct: "c",
+    },
+    {
+        question: "I Sverige är andelen förnybar energi:",
+        a: "100%",
+        b: "20%",
+        c: "50%",
+        correct: "c",
+    },
+    {
+        question: "Hur kan jag påverka Sveriges energitillverkning?",
+        a: "Rösta i riksdagsvalet för det parti jag tycker har en bra energipolitik",
+        b: "Köpa en begagnad elbil",
+        c: "Cykla till jobbet/skolan",
+        correct: "a",
+    },
+    {
+        question: "Vad händer med den extra el du inte använder?",
+        a: "Den försvinner",
+        b: "Den kan lagras i stora batterier i hemmet eller i elbilens batteri för senare användning",
+        c: "Den säljs till högsta budaren",
+        correct: "b",
+    },
+    {
+        question: "Hur många procents avdrag får du för material och arbetskostnad om du installerar solceller?",
+        a: "5%",
+        b: "10%",
+        c: "15%",
+        correct: "c",
+    },
     
 ]
 
