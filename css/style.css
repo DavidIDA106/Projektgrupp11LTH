@@ -7,16 +7,26 @@
     grid-auto-rows: minmax(100px, auto);
     
 }
+
 /* Bestämmer bodyns egenskaper, färg */
 body{
-  background-color: #b8c6db;
+  background-color: #ffffff;
 }
 
+
 .header{
-    grid-column: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
     grid-row: 0;
 }
+
+/* Separat header för att få quizen centrerad, används i quiz.html */
+.quizHeader{
+        grid-column-start: 2;
+}
+
 /* Sidebarens egenskaper, notera z-index som tar sidebaren i en tredje dimension vid behov */
+
 .sidebar {
     height: 100%;
     width: 85px;
@@ -30,13 +40,30 @@ body{
     padding-top: 60px;
     white-space: nowrap;
   }
+  
 
   /* Submenyns egenskaper (horisontella menyn i toppen av sidan  */
 .belowHeader {
-    background-color: cyan;
+    background-color: #b3ff8b;
     grid-column: 1/7;
+    height: 82%;
     grid-row: 2;
     opacity: 80%;
+}
+
+
+.belowHeader a {
+    display: inline-block;
+    height: 100%;
+    line-height: 76px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+.belowHeader a:hover {
+    background-color: #acffab;
 }
 
 /* Länkarnas egenskaper i sidebaren */
@@ -44,10 +71,9 @@ body{
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: #818181;
     display: block;
-    font-size: 30px;
   }
 
   /* Vid hovring över länkarna i sidebaren */
@@ -55,7 +81,7 @@ body{
 .sidebar a:hover {
     color: #f1f1f1;
   }
- 
+
 
 #main {
     grid-column: 1/7;
@@ -65,6 +91,7 @@ body{
     margin-left: 85px;
     transition: margin-left 0.5s;
 }
+
 
 main .sidebar {
     position: absolute;
@@ -80,6 +107,7 @@ main .sidebar {
   vertical-align: middle;
 }
 
+
 .material-icons {
   padding-bottom: 3px;
   margin-right: 30px;
@@ -90,15 +118,21 @@ p {
     font-family: sans-serif;
 }
 
+/* stil på h1 */
 h1 {
+    text-align: center;
     font-family: sans-serif;
+    font-size: 48px;
 }
 
+/* stil på h2 */
 h2 {
     font-family: sans-serif;
+    font-size: 32px;
 }
 
-h3 {
+/* stil på mindre headers */
+h3, h4 {
     font-family: sans-serif;
 }
 

@@ -15,22 +15,30 @@
     <div class="wrapper">
         <div class="header" style="text-align: center;">
            
-            <h1>Title here
-            <span class="material-icons">face</span>
-        </h1>
+            <h1>Hållbar utveckling</h1>
         </div>
+
+<!-- Top-meny med länkar -->         
         <div class="belowHeader" style="text-align: center;">
-            <h2>Links here</h2>
+
+            <a href="#energi1"> &nbsp; Inledning &nbsp; </a>
+            <a href="#energi2"> &nbsp; Förnybart &nbsp; </a>
+            <a href="#energi3"> &nbsp; Solceller &nbsp; </a>
+            <a href="#energi4"> &nbsp; Konsumtion &nbsp; </a>
+           
         </div>
+
+
 <!-- Kör en js funktion för att dra ut och dra in sidebaren som ligger i index.js -->
         <div id="mySidebar" class="sidebar"
             onmouseover="toggleSidebar()"
             onmouseout="toggleSidebar()">
-            <a href="index.html"><span><i class="material-icons">info</i><span class="icon-text">Hemsida</span></a> <br> <br>
+            <a href="index.html"><span><i class="material-icons">info</i><span class="icon-text">Startsida</span></a> <br> <br>
             <a href="energi.html"><span><i class="material-icons">battery_charging_full</i><span clas="icon-text">Energi</span></a> <br> <br>
-            <a href="mat.html"><span><i class="material-icons">restaurant_menu</i><span clas="icon-text">MatProd.</span></a> <br> <br>
+            <a href="mat.html"><span><i class="material-icons">restaurant_menu</i><span clas="icon-text">Matproduktion</span></a> <br> <br>
             <a href="transport.html"><span><i class="material-icons">flight_takeoff</i><span clas="icon-text">Transport</span></a> <br> <br>
-            <a href="eko.html"><span><i class="material-icons">park</i><span clas="icon-text">EkoSystem</span></a> <br> <br>
+            <a href="eko.html"><span><i class="material-icons">park</i><span clas="icon-text">Ekosystem</span></a> <br> <br>
+            <a href="quiz.html"><span><i class="material-icons">quiz</i><span clas="icon-text">Quiz</span></a> <br> <br>
 
 
         </div>
@@ -38,9 +46,17 @@
             
             <h2>Energi</h2>
 
-            <h3>Hållbar utveckling inom energi och energiframställning.</h3>
+            <h3 id="energi1">Hållbar utveckling inom energi och energiframställning.</h3>
 
-            <p>Energi finns överallt omkring oss. Vi använder energi dagligen, när vi värmer upp våra hus, åker buss eller lagar mat. En av de vanligaste *energibärarna som vi känner till i vardagliga livet är elektricitet. Elektriciteten som vi tar för givet i vägguttaget när vi ska dammsuga eller tända belysningen hemma.</p>
+            <p>
+            <figure style="float:right">
+            <img height="476px" width="675px" src="../pictures/energraph1.png">
+            <figcaption style="font-size: 12px; font-style: italic;">
+                Graf 2: En graf över hur mycket olja som kan produceras av olika råvaror.
+                </br>Data från https://wwwwwfse.cdn.triggerfish.cloud/uploads/2019/01/producerad-olja-ton-per-hektar-1920x1200.jpg
+            </figcaption>
+            </figure>
+            Energi finns överallt omkring oss. Vi använder energi dagligen, när vi värmer upp våra hus, åker buss eller lagar mat. En av de vanligaste energibärarna som vi känner till i vardagliga livet är elektricitet. Elektriciteten som vi tar för givet i vägguttaget när vi ska dammsuga eller tända belysningen hemma.</p>
 
             <p>Men hur framställer vi energin? Och varför är det inte hållbart att framställa på det sättet som vi gör idag? Vad är egentligen problemet?</p>
 
@@ -50,19 +66,13 @@
 
             <p>I diagrammet nedan kan vi studera vart vår energi kommer ifrån och hur konsumtionen har ökat sedan år 1900.</p>
 
-            <figure>
-            <img height="529px" width="751px" src="../pictures/energraph1.png">
-            <figcaption style="font-size: 12px; font-style: italic;">
-                Graf 2: En graf över hur mycket olja som kan produceras av olika råvaror.
-                Data från https://wwwwwfse.cdn.triggerfish.cloud/uploads/2019/01/producerad-olja-ton-per-hektar-1920x1200.jpg
-            </figcaption>
-            </figure>
-            </br>
+            <p>Vi kan bland annat se tydligt se att energikonsumtionen stiger år för år. </br></br>
+            Vad är egentligen problemet då? </p>
 
             <p>
-            <img style = "height:528; width:352px; float: right;" src="../pictures/forest2.jpg">
-            Vi kan bland annat se tydligt se att energikonsumtionen stiger år för år. </br></br>
-            Vad är egentligen problemet då? </br></br>
+            <figure style = "float: right">    
+            <img style = "height:528; width:352px;" src="../pictures/forest2.jpg">
+            </figure>
             Jo, i huvudsak är det hur energiomvandlingen påverkar vårt klimat. För att förstå det bättre måste vi kort förklara växthuseffekten: </br></br>
             Jordens atmosfär omges av så kallade växthusgaser. Dessa gaser (t.ex. Koldioxid) hjälper till att behålla värmen på jorden. Växthusgaserna fungerar ungefär som en filt över jorden, för att hålla den lagom varm. </br></br>
             När vi förbränner t.ex. kol eller olja, frigörs stora mängder koldioxid i atmosfären. Växterna som vanligtvis kan ta hand om koldioxid för att skapa syre (fotosyntesen), hinner nu inte med och vi har för mycket växthusgaser i atmosfären, man kan säga att vi har nu lagt en extra filt över jorden, vilket höjer temperaturen. Detta i sin tur medför bland annat att polarisarna smälter och vattennivån höjs, vårt väder påverkas och vi människor blir negativt påverkade på flera vis i samband med detta. </br></br>
@@ -78,7 +88,7 @@
             </br>
 
 
-            <h3>Använd förnybara energikällor</h3>
+            <h3 id="energi2">Använd förnybara energikällor</h3>
 
             <p>Energikällor finns både som så kallade ”förnybara” energikällor och ”icke förnybara” energikällor. De förnybara källorna fylls ständigt på genom solens strålar. Däremot är de icke förnybara energikällorna sådana att de bara finns i en bestämd mängd och återbildas väldigt långsamt eller inte alls.</p>
 
@@ -99,7 +109,7 @@
              </br>
 
 
-            <h3>Producera egen förnybar elektricitet. Installera solceller.</h3>
+            <h3 id="energi3">Producera egen förnybar elektricitet. Installera solceller.</h3>
 
             <p>Idag finns tekniken för att kunna ta vara på solens energi och omvandla den till elektricitet. Att installera solceller som fångar upp energin från solen blir allt vanligare. Ofta kan man se solcellerna på hustak eller som stora ”fält” som producerar större mängder el.</p>
 
@@ -113,36 +123,33 @@
             </br> 
             </br>
 
-            <h3>Konsumera mindre el</h3>
+            <h3 id="energi4">Konsumera mindre el</h3>
 
             <p>Ett av huvudproblemen med energikonsumtionen är att vår globala konsumtion ökar årligen, vi använder alltså mer och mer energi. Därför är det viktigt att vi försöker begränsa vår energikonsumtion på de sätt vi kan. Nedan följer några enkla tips om hur du i livet och i hemmet kan minska energikonsumtionen. Du kan säkert hitta många fler om du tänker på vad som kan dra energi.</p>
+            
 
-            <h3>Sänk värmen i hemmet</h3>
-
-            <p>Ett av de effektivaste sätten att spara energi är att sänka värmen där hemma. Har du rätt temperatur inställd? Är det onödigt varmt? Enligt energimyndigheten i Sverige går 80% av vår energi åt att värma upp våra hushåll.</p>
-
-            <p>Sänk värmen hemma, börja med en grad, det känns ofta inte någon skillnad. Studier visar att en grads sänkning ger ungefär 110 KWh besparing per månad, något som motsvarar cirka 150kr/mån på elräkningen. Vad bra!</p>
+            <p><b>Sänk värmen i hemmet</b></br>Ett av de effektivaste sätten att spara energi är att sänka värmen där hemma. Har du rätt temperatur inställd? Är det onödigt varmt? Enligt energimyndigheten i Sverige går 80% av vår energi åt att värma upp våra hushåll. Sänk värmen hemma, börja med en grad, det känns ofta inte någon skillnad. Studier visar att en grads sänkning ger ungefär 110 KWh besparing per månad, något som motsvarar cirka 150kr/mån på elräkningen. Vad bra!</p>
+           
 
 
-            <h3>Byt lampor / Släck lampor</h3>
+            
 
-            <p>Byt lampor som förbrukar mindre energi, helst LED-lampor. LED-lampor drar 80 procent mindre el och håller tio gånger så länge som en vanlig glödlampa. Du kan spara upp till 600kr per lampa då en LED-lampa håller mycket längre. Tänk också på att släcka lampor där du inte är. Idag finns smidiga lösningar med timers och rörelsesensorer som automatiskt kan släcka och tända din belysning utifrån behov.</p>
-
-
-            <h3>Diska i diskmaskin</h3>
-
-            <p>Otroligt (och skönt) nog är det energibesparande att diska i diskmaskinen i stället för att handdiska, oavsett om du sköljer under rinnande vatten eller diskar i balja. Se till att fylla diskmaskinen bara och skölj inte av för mycket innan du ställer in.</p>
-
-            <h3>Lär dig tvätta</h3>
-
-            <p>När man tvättar i tvättmaskin är det viktigt att tänka på några saker. Framför allt ska du försöka fylla din tvättmaskin så att du tvättar fulla maskiner varje gång. Ställ också in cetrifugeringsvarvtalet på max, gärna 1400varv/min om det finns. Centrifugeringen gör att vattnet trycks ut ur dina kläder när maskinen snurrar snabbt, det går då snabbare att torka dem. När du ska torka, gör det då helst genom att hänga upp kläderna och låta dem lufttorka, detta drar ju ingen energi alls, vilket är bättre än både torktumlare och torkskåp.</p>
+            <p><b>Byt lampor / Släck lampor</b></br>Byt lampor som förbrukar mindre energi, helst LED-lampor. LED-lampor drar 80 procent mindre el och håller tio gånger så länge som en vanlig glödlampa. Du kan spara upp till 600kr per lampa då en LED-lampa håller mycket längre. Tänk också på att släcka lampor där du inte är. Idag finns smidiga lösningar med timers och rörelsesensorer som automatiskt kan släcka och tända din belysning utifrån behov.</p>
+         
 
 
-            <h3>Duscha snabbt och helst</h3>
 
-            <p>Duscha kortare tid, då minskar din energiförbrukning. En 3 minuters dusch motsvarar ungefär 36 liter varmvatten medan en dusch på 10 minuter förbrukar i snitt 120 liter varmvatten. En kort dusch på fem minuter istället för en kvart kan därför minska både vatten, energi och pengar värt 500 kWh per år. </p>
+            <p><b>Diska i diskmaskin</b></br>Otroligt (och skönt) nog är det energibesparande att diska i diskmaskinen i stället för att handdiska, oavsett om du sköljer under rinnande vatten eller diskar i balja. Se till att fylla diskmaskinen bara och skölj inte av för mycket innan du ställer in.</p>
+            
 
-            <p>Det finns också snålspolande blandare och duschmunstycken som kan spara väldigt mycket varmvatten och energi därigenom. Att duscha är också mer energieffektivt än att bada, då badningen kräver mer vatten för att fylla badkaret.</p>
+
+            <p><b>Lär dig tvätta</b></br>När man tvättar i tvättmaskin är det viktigt att tänka på några saker. Framför allt ska du försöka fylla din tvättmaskin så att du tvättar fulla maskiner varje gång. Ställ också in cetrifugeringsvarvtalet på max, gärna 1400varv/min om det finns. Centrifugeringen gör att vattnet trycks ut ur dina kläder när maskinen snurrar snabbt, det går då snabbare att torka dem. När du ska torka, gör det då helst genom att hänga upp kläderna och låta dem lufttorka, detta drar ju ingen energi alls, vilket är bättre än både torktumlare och torkskåp.</p>
+            
+
+
+
+            <p><b>Duscha snabbt och helst</b></br>Duscha kortare tid, då minskar din energiförbrukning. En 3 minuters dusch motsvarar ungefär 36 liter varmvatten medan en dusch på 10 minuter förbrukar i snitt 120 liter varmvatten. En kort dusch på fem minuter istället för en kvart kan därför minska både vatten, energi och pengar värt 500 kWh per år.
+            Det finns också snålspolande blandare och duschmunstycken som kan spara väldigt mycket varmvatten och energi därigenom. Att duscha är också mer energieffektivt än att bada, då badningen kräver mer vatten för att fylla badkaret.</p>
 
 
 
