@@ -20,6 +20,10 @@ body{
     grid-row: 0;
 }
 
+.quizHeader{
+        grid-column-start: 2;
+}
+
 
 .sidebar {
     height: 100%;
