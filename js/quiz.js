@@ -50,6 +50,70 @@ const testQuestions = [
         c: "Malaysia och Indonesien",
         correct: "c",
     },
+    {
+        question: "Hur stor andel av det globala utsläppen står livsmedelssektorn för ?",
+        a: "15-20 %",
+        b: "20-30 %",
+        c: "40 - 50%",
+        correct: "b",
+    },
+    {
+        question: "Står varje personer i Sverige för 1,5 ton koldioxidekvivalent per år ?",
+        a: "Nej",
+        b: "Ja",
+        c: "Går ej att säga",
+        correct: "b",
+    },
+    {
+        question: "Hur många kg mat slänger vi varje år ?",
+        a: "19",
+        b: "20",
+        c: "30",
+        correct: "a",
+    },
+    {
+        question: "Hur kan du minska matsvinn ?",
+        a: "Se till att förvara maten under direkt solljus",
+        b: "Donera hälften av din mat till papperskorgen",
+        c: "planera dina köp och inte köpa så mycket",
+        correct: "c",
+    },
+    {
+        question: "När är miljömärkningars dag?",
+        a: "den 1 januari ",
+        b: "den 6 juni ",
+        c: "den 17 oktober",
+        correct: "c",
+    },
+    {
+        question: "Vad är en av grundidéerna för Bra miljöval",
+        a: "Företag ska använda mindre energi",
+        b: "Naturresurser ska användas sparsamt ",
+        c: "Företag/ tillverkare ska utvecklas för att bli mer skonsammare för miljö",
+        correct: "b",
+    },
+    {
+        question: "Hur mycket mer vatten behövs för producera komjölk jämfört med växtbaserade drycker?",
+        a: "5x",
+        b: "3x",
+        c: "2x",
+        correct: "b",
+    },
+    {
+        question: "Hur stor andel av den svenska befolkningen bor på landsbygden?",
+        a: "15%",
+        b: "30%",
+        c: "22%",
+        correct: "c",
+    },
+    {
+        question: "Vad är verkningsgraden på en elbil?",
+        a: "83%",
+        b: "85%",
+        c: "79%",
+        correct: "a",
+    },
+    
 ]
 
 function qS(selector) {
@@ -67,6 +131,7 @@ function eId(id) {
 
 const quiz = eId('quiz');
 const submit = eId('submit');
+let scoreElem = eId('score_counter');
 let questionElem = eId('question');
 let answerElems = qSA('.answer');
 let aText = eId('a_text');
@@ -83,6 +148,7 @@ function startQuiz(){
     deselectAnswers();
 
     const currentData = testQuestions[questionCounter];
+    scoreElem.innerText = "Score: " + scoreCount;
     questionElem.innerText = currentData.question;
     aText.innerText = currentData.a;
     bText.innerText = currentData.b;
@@ -109,18 +175,26 @@ submit.addEventListener('click', () => {
 
     if(answer === testQuestions[questionCounter].correct){
         scoreCount++;
+        submit.style.background = "#44b927";
+    } else{
+        scoreCount -= 15;
+        
+        submit.style.background = "red";
     }
+    this.setTimeout(function(){submit.style.background = "#04adc4"}, 500 );
 
     questionCounter++;
 
     if(questionCounter < testQuestions.length){
         startQuiz();
+        
     } else {
         quiz.innerHTML = `
-        <h2>You answered ${scoreCount}/${testQuestions.length} questions correctly</h2>
+        <h2>You scored ${scoreCount} out of a possible ${testQuestions.length} points</h2>
 
         <button onclick="location.reload()">Reload</button>
-        `
+        `;
+        submit.style.display="none";
     }
 })
 
