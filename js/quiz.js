@@ -36,14 +36,6 @@ const testQuestions = [
         correct: "a",
     },
     {
-        question: "Hur mycket vatten krävs för att producera ett enda kycklingbröst?",
-        a: "Köp mer halvfabrikat",
-        b: "Laga mer mat hemma med när producerade råvaror",
-        c: "Ät mindre leverpastej ",
-        correct: "b",
-
-    },
-    {
         question: "Vart i världen produceras mest palmolja?",
         a: "Ryssland",
         b: "Colombia",
