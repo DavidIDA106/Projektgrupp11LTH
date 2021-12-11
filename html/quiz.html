@@ -16,22 +16,14 @@
     <div class="wrapper">
         <div class="quizHeader" style="text-align: center;">
            <div id="score" style="margin-left:auto">
-
-           </div>
-           <div id="corGuess"
-           onmouseover=""
-           >
-
-           </div>
-           <div id="failGuess">
-
            </div>
         </div>
 
-    
+    <!--Här är knapparna/alternativen/svaren på quizzet-->
         <section class="quizContainer">
            <div class="quiz-container" id="quiz">
                <div class="quiz-header">
+                   <h2 id="score_counter">Score</h2>
                    <h2 id="question">Question Text</h2>
                    <ul>
                        <li>
@@ -46,14 +38,10 @@
                            <input type="radio" name="answer" id="c" class="answer">
                            <label for="c" id="c_text">Answer c</label>
                        </li>
-                       <li>
-                           <input type="radio" name="answer" id="d" class="answer">
-                           <label for="d" id="d_text">Answer D</label>
-                       </li>
                    </ul>
                </div>
            </div>
-           <button type="submit" id="submit">Submit</button>
+           <button type="submit" id="submit">Nästa</button>
         </section>
         <div id="mySidebar" class="sidebar"
             onmouseover="toggleSidebar()"
