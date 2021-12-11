@@ -1,3 +1,4 @@
+//Alla frågor
 const testQuestions = [
     {
         question: "På vilket sätt innebär mer skog bättre luft?",
@@ -149,7 +150,7 @@ const testQuestions = [
     },
     
 ]
-
+// Funktioner för att slippa skriva queryselector varje gång
 function qS(selector) {
     return document.querySelector(selector);
 }
@@ -177,22 +178,25 @@ let questionCounter = 0;
 
 startQuiz();
 
+//Uppdatera frågor och svar
 function startQuiz(){
 
     deselectAnswers();
 
     const currentData = testQuestions[questionCounter];
-    scoreElem.innerText = "Score: " + scoreCount;
+    scoreElem.innerText = "Poäng: " + scoreCount + "/" + questionCounter;
     questionElem.innerText = currentData.question;
     aText.innerText = currentData.a;
     bText.innerText = currentData.b;
     cText.innerText = currentData.c;
 }
 
+//Säger säg självt men inga alternativ är iklickade längre
 function deselectAnswers(){
     answerElems.forEach(element => element.checked = false);
 }
 
+//Returnerar värdet på de element som är iklickade d.v.s. vilket alternativ personen valde
 function selected(){
     let answer;
 
@@ -204,17 +208,17 @@ function selected(){
     return answer;
 }
 
+//Vid submit kolla om svaret är korrekt samt kolla om det finns fler frågor att köra
 submit.addEventListener('click', () => {
     const answer = selected();
 
     if(answer === testQuestions[questionCounter].correct){
         scoreCount++;
         submit.style.background = "#44b927";
-    } else{
-        scoreCount -= 15;
-        
+    } else{        
         submit.style.background = "red";
     }
+    //För att knappen ska gå tillbaka till sin ursprungliga färg efter en halvsekund
     this.setTimeout(function(){submit.style.background = "#04adc4"}, 500 );
 
     questionCounter++;
@@ -223,10 +227,11 @@ submit.addEventListener('click', () => {
         startQuiz();
         
     } else {
+        //Quizzet är färdigt och då visas slutpoängen
         quiz.innerHTML = `
         <h2>You scored ${scoreCount} out of a possible ${testQuestions.length} points</h2>
 
-        <button onclick="location.reload()">Reload</button>
+        <button onclick="location.reload()">Prova igen</button>
         `;
         submit.style.display="none";
     }
