@@ -8,25 +8,28 @@
     
 }
 
+
 /* Bestämmer bodyns egenskaper, färg */
 body{
   background-color: #ffffff;
 }
 
 
+/* Flyttar submenyn så att den inte täcker sidebaren */
 .header{
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row: 0;
 }
 
+
 /* Separat header för att få quizen centrerad, används i quiz.html */
 .quizHeader{
         grid-column-start: 2;
 }
 
-/* Sidebarens egenskaper, notera z-index som tar sidebaren i en tredje dimension vid behov */
 
+/* Sidebarens egenskaper, notera z-index som tar sidebaren i en tredje dimension vid behov */
 .sidebar {
     height: 100%;
     width: 85px;
@@ -52,6 +55,7 @@ body{
 }
 
 
+/* Stil på länkarna i submenyn */
 .belowHeader a {
     display: inline-block;
     height: 100%;
@@ -62,12 +66,14 @@ body{
     color: #3d3d3d;
 }
 
+
+/* Stil på länkarna i submenyn då de hovras över*/
 .belowHeader a:hover {
     background-color: #acffab;
 }
 
-/* Länkarnas egenskaper i sidebaren */
 
+/* Länkarnas egenskaper i sidebaren */
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -76,8 +82,8 @@ body{
     display: block;
   }
 
-  /* Vid hovring över länkarna i sidebaren */
 
+/* Vid hovring över länkarna i sidebaren */
 .sidebar a:hover {
     color: #f1f1f1;
   }
